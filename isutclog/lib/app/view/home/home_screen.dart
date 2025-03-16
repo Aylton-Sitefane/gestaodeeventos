@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:isutclog/app/view/home/components/mybody.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -6,7 +7,20 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      appBar: myAppBarHome(),
+      body: Mybody(),
+    );
+  }
+
+  AppBar myAppBarHome() {
+    return AppBar(
+      backgroundColor: Colors.blueAccent,
+      elevation: 0,
+      leading: GestureDetector(
+        child: Icon(Icons.density_large_outlined),
+      onTap: () {
+        
+      },),
     );
   }
 }

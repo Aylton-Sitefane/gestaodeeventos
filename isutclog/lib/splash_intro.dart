@@ -52,7 +52,7 @@ class _SplashIntroState extends State<SplashIntro>
           children: [
             Image(image: logoImage),
             SizedBox(height: 5,),
-            Text(welcomeText, style: TextStyle(fontSize: 22),)
+            Text(welcomeTextSplash, style: TextStyle(fontSize: 22),)
           ],
         ),
       ),
