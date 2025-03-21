@@ -41,7 +41,7 @@ class _SplashIntroState extends State<SplashIntro>
           gradient: LinearGradient(
             colors: [
               Colors.white,
-              Color(212529),
+              Color(0x00033e31),
             ],
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
