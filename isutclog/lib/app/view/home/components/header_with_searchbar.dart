@@ -62,16 +62,27 @@ class HeaderSearchBox extends StatelessWidget {
                       color: Colors.blueAccent.withOpacity(0.23),
                     )
                   ]),
-              child: TextField(
-                onChanged: (value) {},
-                decoration: InputDecoration(
-                    hintText: hintSearch,
-                    hintStyle: TextStyle(
-                      color: Colors.blueAccent.withOpacity(0.5),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: TextField(
+                      onChanged: (value) {},
+                      decoration: InputDecoration(
+                        hintText: hintSearch,
+                        hintStyle: TextStyle(
+                          color: Colors.blueAccent.withOpacity(0.5),
+                        ),
+                        enabledBorder: InputBorder.none,
+                        focusedBorder: InputBorder.none,
+                        
+                      ),
                     ),
-                    enabledBorder: InputBorder.none,
-                    focusedBorder: InputBorder.none,
-                    suffixIcon: Icon(Icons.search)),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: searchIcon,
+                  ),
+                ],
               ),
             ),
           ),
@@ -80,4 +91,3 @@ class HeaderSearchBox extends StatelessWidget {
     );
   }
 }
-
