@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:isutclog/app/view/Details/widgets/icon_card.dart';
 import 'package:isutclog/components/constants.dart';
 
-
 class ImageAndCardSection extends StatelessWidget {
   const ImageAndCardSection({
     super.key,
   });
-
 
   @override
   Widget build(BuildContext context) {
@@ -38,10 +36,35 @@ class ImageAndCardSection extends StatelessWidget {
                       ),
                     ),
                     Spacer(),
-                    IconCard(icon: Icons.share),
-                    IconCard(icon: Icons.message_outlined),
-                    IconCard(icon: Icons.heart_broken_outlined),
-                    IconCard(icon: Icons.share_location_outlined),
+                    GestureDetector(
+                      child: IconCard(
+                        icon: Icons.share,
+                      ),
+                      onTap: (){},
+                    ),
+                    GestureDetector(
+                      child: IconCard(
+                        icon: Icons.message_outlined,
+                      ),
+                      onTap: (){},
+                    ),
+                    GestureDetector(
+                      child: IconCard(
+                        icon: Icons.heart_broken_outlined,
+                      ),
+                      onTap: () {
+                        
+                      },
+                    ),
+                    GestureDetector(
+                      child: IconCard(
+                        icon: Icons.share_location_outlined,
+                      ),
+                      onTap: () {
+                        
+                      },
+                    ),
+                    
                   ],
                 ),
               ),
