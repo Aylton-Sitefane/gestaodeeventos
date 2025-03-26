@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:isutclog/app/view/Details/components/icon_card.dart';
+import 'package:isutclog/app/view/Details/widgets/icon_card.dart';
 import 'package:isutclog/components/constants.dart';
 
 

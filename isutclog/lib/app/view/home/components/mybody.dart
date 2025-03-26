@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:isutclog/app/view/home/components/event_list_widget.dart';
-import 'package:isutclog/app/view/home/components/infotext_recomended_see_more.dart';
+import 'package:isutclog/app/view/home/widgets/infotext_recomended_see_more.dart';
 import 'package:isutclog/app/view/home/components/recomended_event.dart';
 import 'package:isutclog/components/constants.dart';
 import 'header_with_searchbar.dart';
