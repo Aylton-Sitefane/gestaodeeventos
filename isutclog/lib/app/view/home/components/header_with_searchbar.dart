@@ -37,9 +37,8 @@ class HeaderSearchBox extends StatelessWidget {
                   ),
                 ),
                 Spacer(),
-                Image(
-                  image: logoImage,
-                ),
+                logoImage,
+                
               ],
             ),
           ),

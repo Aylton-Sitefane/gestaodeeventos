@@ -3,13 +3,14 @@ import 'package:isutclog/components/constants.dart';
 
 class InfoTextRecomendedSeeMore extends StatelessWidget {
   final String text;
-  final String textButton;
+  final String? textButton;
+  final dynamic press;
 
-  const InfoTextRecomendedSeeMore({
-    Key? key,
+   InfoTextRecomendedSeeMore({
+    super.key,
     required this.text,
-    required this.textButton,
-  }) : super(key: key);
+     required this.press, this.textButton,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -25,10 +26,11 @@ class InfoTextRecomendedSeeMore extends StatelessWidget {
               fontSize: 18,
             ),
           ),
+          
           OutlinedButton(
-            onPressed: () {},
+            onPressed: press,
             child: Text(
-              textButton,
+              textButton!,
             ),
           )
         ],

@@ -47,10 +47,10 @@ class _SplashIntroState extends State<SplashIntro>
             end: Alignment.bottomLeft,
           ),
         ),
-        child: const Column(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image(image: logoImage),
+            logoImage,
             SizedBox(height: 5,),
             Text(welcomeTextSplash, style: TextStyle(fontSize: 22),)
           ],
