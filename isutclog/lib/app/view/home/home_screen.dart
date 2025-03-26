@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:isutclog/app/view/home/components/my_button_navbar.dart';
 import 'package:isutclog/app/view/home/components/mybody.dart';
 import 'package:isutclog/components/constants.dart';
 
@@ -10,6 +11,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: myAppBarHome(),
       body: Mybody(),
+      bottomNavigationBar: BottonNavBar(),
     );
   }
 
@@ -22,9 +24,9 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.all(12.0),
           child: drawerIcon,
         ),
-      onTap: () {
-        
-      },),
+        onTap: () {},
+      ),
     );
   }
 }
+
