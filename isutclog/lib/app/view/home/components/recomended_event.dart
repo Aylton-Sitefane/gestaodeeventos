@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:isutclog/app/view/Details/detail_screen.dart';
 import 'package:isutclog/components/constants.dart';
 
 
@@ -18,21 +19,42 @@ class RecomendedEvent extends StatelessWidget {
             image: logoImage,
             curse: "LECC",
             imagetitle: "ISutc",
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailScreen(),
+                ),
+              );
+            },
             title: "Summerchild",
           ),
           RecomendedEvemtCard(
             image: logoImage,
             curse: "LECC",
             imagetitle: "ISutc",
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailScreen(),
+                ),
+              );
+            },
             title: "Summerchild",
           ),
           RecomendedEvemtCard(
             image: logoImage,
             curse: "LECC",
             imagetitle: "ISutc",
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailScreen(),
+                ),
+              );
+            },
             title: "Summerchild",
           ),
         ],
@@ -64,12 +86,12 @@ class RecomendedEvemtCard extends StatelessWidget {
         bottom: KdefaultPadding * 2.5,
       ),
       width: size.width * 0.4,
-      child: Column(
-        children: [
-          image,
-          GestureDetector(
-            onTap: press,
-            child: Container(
+      child: GestureDetector(
+        onTap: press,
+        child: Column(
+          children: [
+            image,
+            Container(
               padding: EdgeInsets.all(KdefaultPadding / 2),
               decoration: BoxDecoration(
                   color: Colors.white,
@@ -112,9 +134,9 @@ class RecomendedEvemtCard extends StatelessWidget {
                   ),
                 ],
               ),
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
     );
   }

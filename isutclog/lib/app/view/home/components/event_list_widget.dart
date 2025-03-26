@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:isutclog/app/view/Details/detail_screen.dart';
 
 import '../../../../components/constants.dart';
 
@@ -15,15 +16,36 @@ class EventListWidget extends StatelessWidget {
         children: [
           EventItem(
             image: 'assets/images/logo_isu.png',
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailScreen(),
+                ),
+              );
+            },
           ),
           EventItem(
             image: 'assets/images/logo_isu.png',
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailScreen(),
+                ),
+              );
+            },
           ),
           EventItem(
             image: 'assets/images/logo_isu.png',
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailScreen(),
+                ),
+              );
+            },
           ),
         ],
       ),
