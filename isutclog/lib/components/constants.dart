@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 //images
-var logoImage = Image.asset('assets/images/logo_isu.png', fit: BoxFit.cover,);
+var logoImage = Image.asset(
+  'assets/images/logo_isu.png',
+  fit: BoxFit.cover,
+);
 
 // icons
 var drawerIcon = SvgPicture.asset("assets/icons/drawer.svg");
@@ -22,6 +25,8 @@ const seeMoreText = "Ver mais...";
 const culturalEventsText = "Eventos Culturais";
 const cientificsEventsText = "Eventos Científicos";
 const academicsEventsText = "Eventos Culturais";
+
+const descriptionText = 'Descrição';
 
 // values
 

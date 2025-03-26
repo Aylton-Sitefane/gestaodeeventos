@@ -6,7 +6,7 @@ class InfoTextRecomendedSeeMore extends StatelessWidget {
   final String? textButton;
   final dynamic press;
 
-   InfoTextRecomendedSeeMore({
+   const InfoTextRecomendedSeeMore({
     super.key,
     required this.text,
      required this.press, this.textButton,
