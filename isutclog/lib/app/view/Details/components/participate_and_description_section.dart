@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; 
 import 'package:isutclog/components/constants.dart';
 
 
@@ -29,7 +29,7 @@ class ParticipateAndDescriptionSeaction extends StatelessWidget {
             ),
             child: Center(
               child: Text(
-                "Participar",
+                "Interesse",
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -40,7 +40,7 @@ class ParticipateAndDescriptionSeaction extends StatelessWidget {
         ),
         GestureDetector(
           onTap: () {},
-          child: Container(
+          child: SizedBox(
             width: size.width / 2,
             height: 84,
             child: Center(
