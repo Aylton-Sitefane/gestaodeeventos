@@ -24,7 +24,7 @@ const recomendedText = "Recomendado";
 const seeMoreText = "Ver mais...";
 const culturalEventsText = "Eventos Culturais";
 const cientificsEventsText = "Eventos Científicos";
-const academicsEventsText = "Eventos Culturais";
+const academicsEventsText = "Eventos Academicos";
 
 const descriptionText = 'Descrição';
 

@@ -30,6 +30,7 @@ class BottonNavBar extends StatelessWidget {
             icon: Icon(
               Icons.home,
               color: Colors.blueAccent,
+              size: KdefaultPadding * 2,
             ),
           ),
           
@@ -38,12 +39,16 @@ class BottonNavBar extends StatelessWidget {
             icon: Icon(
               Icons.person_2_outlined,
               color: Colors.blueAccent,
+              size: KdefaultPadding * 2,
+
             ),
           ),IconButton(
             onPressed: () {},
             icon: Icon(
               Icons.settings,
               color: Colors.blueAccent,
+              size: KdefaultPadding * 2,
+
             ),
           ),
         ],

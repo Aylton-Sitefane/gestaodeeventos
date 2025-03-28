@@ -20,14 +20,14 @@ class TitleAndLocationSection extends StatelessWidget {
             text: TextSpan(
               children: [
                 TextSpan(
-                  text: "${title}\n",
+                  text: "$title\n",
                   style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
                       ),
                 ),
                 TextSpan(
-                  text: "${location}\n",
+                  text: "$location\n",
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.blueAccent,
@@ -39,7 +39,7 @@ class TitleAndLocationSection extends StatelessWidget {
           ),
           Spacer(),
           Text(
-            "${institution}\n",
+            "$institution\n",
             style: Theme.of(context)
                 .textTheme
                 .headlineMedium
