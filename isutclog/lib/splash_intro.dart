@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:isutclog/app/view/home/home_screen.dart';
 import 'package:isutclog/components/constants.dart';
+import 'package:isutclog/main_home.dart';
 
 class SplashIntro extends StatefulWidget {
   const SplashIntro({super.key});
@@ -19,7 +19,7 @@ class _SplashIntroState extends State<SplashIntro>
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (context) => const HomeScreen(),
+          builder: (context) => const MainHome(),
         ),
       );
     });
