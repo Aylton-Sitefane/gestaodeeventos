@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:isutclog/app/view/home/widgets/my_button_navbar.dart';
 import 'package:isutclog/app/view/home/components/mybody.dart';
 import 'package:isutclog/components/constants.dart';
 
@@ -11,7 +10,6 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: myAppBarHome(),
       body: Mybody(),
-      bottomNavigationBar: BottonNavBar(),
     );
   }
 
