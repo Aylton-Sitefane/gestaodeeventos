@@ -38,7 +38,6 @@ class HeaderSearchBox extends StatelessWidget {
                 ),
                 Spacer(),
                 logoImage,
-                
               ],
             ),
           ),
@@ -65,7 +64,12 @@ class HeaderSearchBox extends StatelessWidget {
                 children: [
                   Expanded(
                     child: TextField(
-                      onChanged: (value) {},
+                      onChanged: (value) {
+                        showSearch(
+                          context: context,
+                          delegate: CustomSearchDelegate(),
+                        );
+                      },
                       decoration: InputDecoration(
                         hintText: hintSearch,
                         hintStyle: TextStyle(
@@ -73,7 +77,6 @@ class HeaderSearchBox extends StatelessWidget {
                         ),
                         enabledBorder: InputBorder.none,
                         focusedBorder: InputBorder.none,
-                        
                       ),
                     ),
                   ),
@@ -87,6 +90,74 @@ class HeaderSearchBox extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+class CustomSearchDelegate extends SearchDelegate {
+  List<String> searchTerms = [
+    'Evento Maputo',
+    'Graduados',
+    'Feira científica',
+    'Palestras',
+  ];
+
+  @override
+  List<Widget>? buildActions(BuildContext context) {
+    return [
+      IconButton(
+        onPressed: () {
+          query = '';
+        },
+        icon: Icon(Icons.clear),
+      ),
+    ];
+  }
+
+  @override
+  Widget? buildLeading(BuildContext context) {
+    return IconButton(
+        icon: const Icon(Icons.arrow_back),
+        onPressed: () {
+          close(context, null);
+        });
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    List<String> matchQuery = [];
+    for (var element in searchTerms) {
+      if (element.toLowerCase().contains(query.toLowerCase())) {
+        matchQuery.add(element);
+      }
+    }
+    return ListView.builder(
+      itemCount: matchQuery.length,
+      itemBuilder: (context, index) {
+        var result = matchQuery[index];
+        return ListTile(
+          title: Text(result),
+        );
+      },
+    );
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    List<String> matchQuery = [];
+    for (var element in searchTerms) {
+      if (element.toLowerCase().contains(query.toLowerCase())) {
+        matchQuery.add(element);
+      }
+    }
+    return ListView.builder(
+      itemCount: matchQuery.length,
+      itemBuilder: (context, index) {
+        var result = matchQuery[index];
+        return ListTile(
+          title: Text(result),
+        );
+      },
     );
   }
 }
